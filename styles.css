@@ -26,6 +26,10 @@ a{
 .menu{
   background-color: #353A41 ;  
 }
+
+.menu-hiden{
+    display: none;
+}
 .flex{
     display: flex;
     justify-content: space-between;
