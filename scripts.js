@@ -12,6 +12,8 @@ let borrarBtn = document.getElementById("borrar-btn")
 
 let total = 0
 
+window.onload = document.getElementById("ticket-form").reset()
+
 navToggle.addEventListener("click", function(){
     menuBurga.classList.toggle("show")
 })
