@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size: 30px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    padding: 1rem;
+}
+
+li{
+    list-style: none;
+    margin-top: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu{
+  background-color: #353A41 ;  
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #353A41;
+    padding: 1rem;
+}
+
+.center{
+    margin: 1.5rem auto;
+}
+.bars{
+    height: 40px;
+    width: 40px;
+}
+
+.cards{
+    width: 370px;
+    height: 370px;
+    border: 1px solid red;
+}
+
+.text-centered{
+    text-align: center;
+}
+
+form{
+    width: min(600px, 100%);
+}
+.color-azul{
+    border: 2px solid #007BFF;
+}
+
+.color-celeste{
+    border: 2px solid #16A2B9;
+}
+
+.color-amarillo{
+    border: 2px solid #FEC106;
+}
+
+input, select{
+    width: 100%;
+    padding: .75rem;
+    border: 1.5px solid #CFD5DA;
+    border-radius: 5px;
+}
+
+.input-center{
+    margin: 1rem auto;
+}
+
+.monto{
+    width: 100%;
+    padding: .75rem;
+    background-color: #CDE5FE;
+    text-align: left;
+}
+
+.boton{
+    background-color: #96C83E;
+    width: 49%;
+    border: none;
+    margin: 0;
+    padding: 1rem 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+@media(min-width: 811px){
+    
+}
