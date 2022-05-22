@@ -11,7 +11,6 @@ ul{
     margin: 0;
     padding: 0;
     padding: 1rem;
-    text-align: right;
 }
 
 li{
@@ -24,7 +23,12 @@ a{
     color: #fff;
 }
 .menu{
-  background-color: #353A41 ;  
+  background-color: #353A41 ; 
+  position: absolute;
+  right: 0;
+  top: 92px; 
+  width: 100%;
+  text-align: center;
 }
 
 .menu-hiden{
@@ -36,14 +40,25 @@ a{
     align-items: center;
     background-color: #353A41;
     padding: 1rem;
+    height: 92px;
 }
 
 .center{
     margin: 1.5rem auto;
 }
+
+.logo{
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
 .bars{
     height: 40px;
     width: 40px;
+    position: absolute;
+    right:16px;
+    top: 16px;
 }
 
 .cards{
@@ -100,7 +115,23 @@ input, select{
     font-size: 1.5rem;
 }
 
+.go-top{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 25px;
+    width: 25px;
+}
+
 
 @media(min-width: 811px){
-    
+    .bars{
+        display: none;
+    }
+    .menu-hiden{
+        display: block;
+    }
+    .nav{
+        display: flex;
+    }
 }
