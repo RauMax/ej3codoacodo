@@ -78,6 +78,7 @@ a{
 
 form{
     width: min(600px, 100%);
+    padding: 0 0.5rem ;
 }
 
 .color-azul{
