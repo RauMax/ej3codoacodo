@@ -1,9 +1,9 @@
-let menuToggle = document.getElementById("menu-toggle")
+let navToggle = document.querySelector(".nav-toggle")
 let menuBurga = document.getElementById("menu-burga")
 
 
 
-menuToggle.addEventListener("click", function(){
+navToggle.addEventListener("click", function(){
     console.log("button clicked")
-    menuBurga.classList.toggle("menu-hiden");
+    menuBurga.classList.toggle("show")
 })

@@ -1,5 +1,9 @@
-*{
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -20,45 +24,27 @@ li{
 
 a{
     text-decoration: none;
-    color: #fff;
-}
-.menu{
-  background-color: #353A41 ; 
-  position: absolute;
-  right: 0;
-  top: 92px; 
-  width: 100%;
-  text-align: center;
+    color: black;
 }
 
-.menu-hiden{
-    display: none;
+.hidden {
+    height: 0;
+    overflow: hidden;
+}  
+
+.show{
+    height: auto;
+    overflow: visible;
 }
 .flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #353A41;
-    padding: 1rem;
-    height: 92px;
 }
 
 .center{
     margin: 1.5rem auto;
-}
-
-.logo{
-    position: absolute;
-    left: 16px;
-    top: 16px;
-}
-
-.bars{
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    right:16px;
-    top: 16px;
 }
 
 .cards{
@@ -74,6 +60,7 @@ a{
 form{
     width: min(600px, 100%);
 }
+
 .color-azul{
     border: 2px solid #007BFF;
 }
@@ -115,13 +102,7 @@ input, select{
     font-size: 1.5rem;
 }
 
-.go-top{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    height: 25px;
-    width: 25px;
-}
+
 
 
 @media(min-width: 811px){
@@ -132,6 +113,10 @@ input, select{
         display: block;
     }
     .nav{
+        display: flex;
+    }
+    
+    .offertas{
         display: flex;
     }
 }
