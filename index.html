@@ -12,10 +12,9 @@
     <title>Document</title>
   </head>
   <body>
-    
     <nav>
       <div class="flex height">
-        <img src="img/gcbalogo.png" alt="GCBA"/>
+        <img src="img/gcbalogo.png" alt="GCBA" />
         <button class="nav-toggle">
           <i class="fas fa-bars"></i>
         </button>
@@ -65,20 +64,25 @@
         <input type="text" placeholder="Nombre" class="input-center" />
         <input type="text" placeholder="Apellido" class="input-center" />
         <input type="text" placeholder="Correo" class="input-center" />
-        <input type="text" placeholder="Cantidad" class="input-center" />
+        <input
+          type="number"
+          placeholder="Cantidad"
+          class="input-center"
+          id="cantidad"
+        />
         <label
           >Categoria
           <br />
-          <select id="cars">
-            <option value="Estudiante">Estudiante</option>
-            <option value="Trainee">Trainee</option>
-            <option value="Junior">Junior</option>
+          <select id="seleccion" required>
+            <option value="Estudiante" id="estudiante">Estudiante</option>
+            <option value="Trainee" id="trainee">Trainee</option>
+            <option value="Junior" id="junior">Junior</option>
           </select>
         </label>
-        <div class="monto center"><p>Total a pagar: $</p></div>
+        <div class="monto center" id="ammount"><p>Total a pagar: $</p></div>
       </div>
-      <button class="boton">Borrar</button>
-      <button class="boton">Resumen</button>
+      <button class="boton" id="borrar-btn">Borrar</button>
+      <button class="boton" id="total-btn">Resumen</button>
     </form>
 
     <script src="scripts.js"></script>
