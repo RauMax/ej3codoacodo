@@ -143,6 +143,9 @@ footer div{
     li{
         margin: 0;
     }
+    a{
+        margin: 0 1rem;
+    }
     .nav-toggle{
         display: none;
     }
