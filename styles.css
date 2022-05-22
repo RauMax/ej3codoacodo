@@ -27,6 +27,17 @@ a{
     color: black;
 }
 
+.nav-toggle {
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  .nav-toggle:hover {
+    color: var(--clr-primary-1);
+    transform: rotate(90deg);
+  }
+  
 .hidden {
     height: 0;
     overflow: hidden;
