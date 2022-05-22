@@ -8,7 +8,7 @@
 
 body{
     margin: 0;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 ul{
@@ -119,13 +119,18 @@ input[type=text]:focus, input[type=number]:focus  {
     background-color: #96C83E;
     width: 49%;
     border: none;
-    margin: 0;
+    margin-top: 1rem;
     padding: 1rem 0;
     border-radius: 5px;
     color: #fff;
     font-size: 1.5rem;
 }
 
+footer{
+    background-color: #224960;
+    margin-top: 3rem;
+    padding: 1rem;
+}
 
 @media(min-width: 811px){
     li{
@@ -136,6 +141,9 @@ input[type=text]:focus, input[type=number]:focus  {
     }
     .offertas{
         display: flex;
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
     } 
     .hidden {
         height: auto;
@@ -143,7 +151,7 @@ input[type=text]:focus, input[type=number]:focus  {
         background-color: #353A41;
         display: flex;
         align-items: center;
-        gap: 1rem;
+
     }
     nav{
         display: flex;
@@ -151,4 +159,13 @@ input[type=text]:focus, input[type=number]:focus  {
         align-items: center;
         background-color: #353A41;
     } 
+    footer{
+        
+        height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    gap: 1rem;
+    }
 }
