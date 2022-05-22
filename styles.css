@@ -24,7 +24,12 @@ li{
 
 a{
     text-decoration: none;
-    color: black;
+    color: #FFFFE0;
+}
+
+.height{
+    height: 90px;
+    padding: 0 1.5rem;
 }
 
 .nav-toggle {
@@ -32,11 +37,7 @@ a{
     background: transparent;
     border-color: transparent;
     cursor: pointer;
-  }
-  .nav-toggle:hover {
-    color: var(--clr-primary-1);
-    transform: rotate(90deg);
-  }
+}
   
 .hidden {
     height: 0;
@@ -46,7 +47,9 @@ a{
 .show{
     height: auto;
     overflow: visible;
+    background-color: #353A41;
 }
+
 .flex{
     display: flex;
     justify-content: space-between;
@@ -62,6 +65,9 @@ a{
     width: 370px;
     height: 370px;
     border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .text-centered{
@@ -114,20 +120,28 @@ input, select{
 }
 
 
-
-
 @media(min-width: 811px){
-    .bars{
+    li{
+        margin: 0;
+    }
+    .nav-toggle{
         display: none;
     }
-    .menu-hiden{
-        display: block;
-    }
-    .nav{
-        display: flex;
-    }
-    
     .offertas{
         display: flex;
+    } 
+    .hidden {
+        height: auto;
+        overflow: visible;
+        background-color: #353A41;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #353A41;
+    } 
 }
