@@ -40,4 +40,5 @@ totalBtn.addEventListener("click", function(){
 
 borrarBtn.addEventListener("click", function(){
     document.getElementById("ticket-form").reset()
+    ammount.textContent = `Total a pagar: $ 0`
 })
